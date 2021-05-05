@@ -26,10 +26,6 @@ const Header = ({ onCursor, setToggleMenu, toggleMenu, setHamburgerPosition }) =
     setHamburgerPosition({ x: position.x, y: position.y + 72 })
   }
 
-  React.useEffect(() => {
-    window.localStorage.setItem('theme', currentTheme)
-  }, [currentTheme])
-
   return (
     <HeaderNav
       animate={{ y: 0, opacity: 1 }}

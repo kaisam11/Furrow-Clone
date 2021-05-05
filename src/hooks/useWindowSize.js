@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react'
 
+const isBrowser = typeof window !== "undefined"
+
 export const useWindowSize = () => {
+
     const getSize = () => {
         return {
-            width: window.innerWidth,
-            height: window.innerHeight
+            width: isBrowser? window.innerWidth : 0,
+            height: isBrowser? window.innerHeight : 0
         }
     }
 

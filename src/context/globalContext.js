@@ -42,5 +42,9 @@ export const GlobalProvider = ({ children }) => {
     )
 }
 
-export const useGlobalStateContext = () => useContext(GlobalStateContext)
+export const useGlobalStateContext = () => useContext(GlobalStateContext) || {
+    currentTheme: 'dark',
+    cursorType: false,
+    cursorStyle: ['pointer', 'hovered', 'locked']
+}
 export const useGlobalDispatchContext = () => useContext(GlobalDispatchContext)
