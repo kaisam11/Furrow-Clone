@@ -13,19 +13,13 @@ const CustomCursor = ({ toggleMenu }) => {
         cursor.current.style.top = `${clientY}px`;
     }
 
-    const onDrag = event => {
-        const { clientX, clientY } = event
-        cursor.current.style.left = `${clientX}px`;
-        cursor.current.style.top = `${clientY}px`;
-    }
-
     React.useEffect(() => {
         document.addEventListener('mousemove', onMouseMove)
-        document.addEventListener('touchmove', onDrag)
+        document.addEventListener('touchmove', onMouseMove)
 
         return () => {
             document.removeEventListener('mousemove', onMouseMove)
-            document.removeEventListener('touchmove', onDrag)
+            document.removeEventListener('touchmove', onMouseMove)
         }
     }, [])
 

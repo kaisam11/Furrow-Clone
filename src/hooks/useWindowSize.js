@@ -6,8 +6,8 @@ export const useWindowSize = () => {
 
     const getSize = () => {
         return {
-            width: isBrowser? window.innerWidth : 0,
-            height: isBrowser? window.innerHeight : 0
+            width: isBrowser ? window.innerWidth : 1920,
+            height: isBrowser ? window.innerHeight : 1080
         }
     }
 
@@ -15,14 +15,14 @@ export const useWindowSize = () => {
 
     useEffect(() => {
 
-        const handleResize = () => {
+        const handleResize = () => setTimeout(() => {
             setWindowSize(getSize())
-        }
+        }, 1000)
 
         window.addEventListener('resize', handleResize)
 
         return () => window.removeEventListener('resize', handleResize)
-    },[])
+    }, [])
 
     return windowSize
 }
