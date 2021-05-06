@@ -146,7 +146,7 @@ export const NavVideo = styled.div`
     height: 100%;
     width: 100%;
     
-    @media (max-width: 1000px) {
+    @media (max-width: 1024px){
         display: none;
     }
 

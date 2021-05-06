@@ -8,7 +8,7 @@ import easy from '../assets/video/easy.mp4'
 import makeItZero from '../assets/video/make-it-zero.mp4'
 import itTakesAnIsland from '../assets/video/it-takes-an-island.mp4'
 import beaches from '../assets/video/50-beaches.mp4'
-import { FooterNav, FooterContent, FooterSocial } from '../styles/footerStyles'
+import { FooterContent, FooterSocial } from '../styles/footerStyles'
 import { Instagram, Facebook, Vimeo } from '../assets/svg/social-icons'
 
 const navRoutes = [

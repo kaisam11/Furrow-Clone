@@ -26,9 +26,12 @@ export const Canvas = styled.canvas`
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
     display: block;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+
 `
 
 export const BannerTitle = styled(motion.h1)`

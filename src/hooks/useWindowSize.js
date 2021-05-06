@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 
-const isBrowser = typeof window !== "undefined"
+const isBrowser = typeof window !== 'undefined'
 
 export const useWindowSize = () => {
 
     const getSize = () => {
+
         return {
-            width: isBrowser ? window.innerWidth : 1920,
-            height: isBrowser ? window.innerHeight : 1080
+            width: isBrowser? window.innerWidth : 1920,
+            height: isBrowser? window.innerHeight : 1080
         }
     }
 
@@ -15,9 +16,7 @@ export const useWindowSize = () => {
 
     useEffect(() => {
 
-        const handleResize = () => setTimeout(() => {
-            setWindowSize(getSize())
-        }, 1000)
+        const handleResize = () => (setWindowSize(getSize()), 3000)
 
         window.addEventListener('resize', handleResize)
 
