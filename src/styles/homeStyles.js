@@ -42,7 +42,7 @@ export const BannerTitle = styled(motion.h1)`
     pointer-events: none;
 
     @media (max-width: 600px) {
-        bottom: -5rem;
+        bottom: -6rem;
     }
 `
 
