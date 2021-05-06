@@ -9,7 +9,7 @@ A studio website clone built using React.js(Gatsby.js), Styled-Components and Fr
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd Furrow-clone/
+    cd Furrow-Clone/
     gatsby develop
     ```
 
